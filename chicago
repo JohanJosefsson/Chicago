@@ -1,0 +1,12 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="4">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="608" startPos="0" endPos="0" selMode="0" lang="Java" encoding="-1" filename="C:\Users\Johan\java\Chicago\Car.java" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="576" startPos="0" endPos="0" selMode="0" lang="Java" encoding="-1" filename="C:\Users\Johan\java\Chicago\Board.java" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="328" startPos="0" endPos="0" selMode="0" lang="Java" encoding="-1" filename="C:\Users\Johan\java\Chicago\Driveable.java" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="656" startPos="0" endPos="0" selMode="0" lang="Java" encoding="-1" filename="C:\Users\Johan\java\Chicago\PoliceCar.java" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="496" startPos="0" endPos="0" selMode="0" lang="Java" encoding="-1" filename="C:\Users\Johan\java\Chicago\Frame.java" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

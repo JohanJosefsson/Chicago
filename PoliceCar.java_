@@ -1,0 +1,113 @@
+package Chicago;
+
+import java.awt.*;
+import java.awt.event.KeyEvent;
+import javax.swing.ImageIcon;
+
+
+enum Direction { UP, RIGHT, DOWN, LEFT };
+
+class Course {
+	private Direction d;
+	public Course(Direction d) {
+		this.d = d;
+	}
+	public void turnRight() {
+		switch(d) {
+			case UP:
+				d = Direction.RIGHT;
+				break;	
+			case RIGHT:
+				d = Direction.DOWN;
+				break;
+			case DOWN:
+				d = Direction.LEFT;
+				break;
+			case LEFT:
+				d = Direction.UP;
+				break;
+		}
+	}
+}
+
+class Coord {
+	public int x;
+	public int y;
+	public Coord(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+}	
+	
+class Vector {
+	private int dx;
+	private int dy;
+	private int length;
+	public Vector(int dx, int dy) {
+		this.dx = dx;
+		this.dy = dy;
+		this.length = 1;
+	}
+		public Vector(int dx, int dy, int l) {
+		this.dx = dx;
+		this.dy = dy;
+		length = l;
+	}
+
+	public Coord add(Coord c)
+	{
+		return new Coord(c.x + dx, c.y + dy);
+	}
+}
+
+
+
+public class PoliceCar {
+//	int x, dx, y, dy;
+	Coord coord;
+	Vector speed;
+
+	Driveable d;
+	Image image;
+	
+	ImageIcon ii = new ImageIcon("C:/Users/Johan/java/Chicago/res/policecar.png");
+	
+	public PoliceCar(Driveable d) {
+		this.d = d;
+		coord = new Coord(900, 210);
+		speed = new Vector(-1, 0);
+//		x = 900;
+//		y = 210;
+		image = ii.getImage();
+	}
+
+	static private int printcnt = 10;
+	public void move() {
+	
+		coord = speed.add(coord);
+
+//		int newx = x + dx;
+//		int newy = y + dy;
+
+		///
+/*
+		if(d.isStreet(new Rectangle(newx, newy, 32, 32))) {
+			x = newx;
+			y = newy;
+			}*/
+	}
+
+	public int getX() {
+		return coord.x;
+	}
+	
+	public int getY() {
+		return coord.y;
+	}
+
+	
+	public Image getImage() {
+		return image;
+	}
+}
+
